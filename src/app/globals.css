@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Color */
+/* #E4B40D */
+
+/* #EDD955 */
+body {
+  background-color: #071624;
+  margin: auto;
+  padding: 0;
+}
