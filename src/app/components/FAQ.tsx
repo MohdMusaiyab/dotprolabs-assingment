@@ -33,9 +33,9 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8 text-white">
+    <div className="w-full max-w-4xl mx-auto my-20 px-4 py-8 sm:px-6 lg:px-8 text-white bg-white/10 rounded-lg">
       {/* Heading */}
-      <h2 className="text-3xl font-bold text-center mb-8 sm:text-4xl">FAQs</h2>
+      <h2 className="text-3xl text-[#E4B40D] font-bold text-center mb-8 sm:text-4xl">FAQs</h2>
       
       {/* Accordion */}
       <div className="space-y-4">

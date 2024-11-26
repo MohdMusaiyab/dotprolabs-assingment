@@ -8,6 +8,16 @@
 /* #EDD955 */
 body {
   background-color: #071624;
-  margin: auto;
+  margin: 0;
   padding: 0;
+  font-family: 'Raleway';
 }
+
+
+.raleway-font {
+  font-family: "Raleway";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
