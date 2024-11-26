@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 const AboutAndWhy = () => {
   const tableData = [
@@ -19,7 +20,7 @@ const AboutAndWhy = () => {
           Why <span className="text-[#E4B40D]">MoonEX</span>?
         </h2>
 
-        <div className="w-full rounded-lg p-4 sm:p-8 backdrop-blur-md shadow-lg">
+        <div className="w-full rounded-lg p-4 sm:p-8 backdrop-blur-md ">
           <div className="relative rounded-xl overflow-hidden backdrop-blur-sm bg-white/10">
             <div className="overflow-x-auto">
               <table className="min-w-full table-auto border-collapse border border-gray-700/30 text-sm md:text-base">
@@ -28,11 +29,25 @@ const AboutAndWhy = () => {
                     <th className="px-3 py-2 sm:px-6 sm:py-4 font-semibold text-[#E4B40D] border-r border-gray-700/30">
                       Comparison
                     </th>
-                    <th className="px-3 py-2 sm:px-6 sm:py-4 font-semibold text-[#E4B40D] border-r border-gray-700/30">
-                      Moonex
+                    <th className="px-3 py-2 sm:px-6 sm:py-4 text-center border-r border-gray-700/30">
+                      {/* Image for MoonEX Column Header */}
+                      <Image
+                        src="/seconfcol.svg" 
+                        alt="MoonEX"
+                        width={200}
+                        height={100}
+                        className="inline-block"
+                      />
                     </th>
-                    <th className="px-3 py-2 sm:px-6 sm:py-4 font-semibold text-[#FF5050]">
-                      UNISWAP
+                    <th className="px-3 py-2 sm:px-6 sm:py-4 text-center">
+                      {/* Image for Uniswap Column Header */}
+                      <Image
+                        src="/thirdcol.svg" // Replace with the correct image URL
+                        alt="Uniswap"
+                        width={180}
+                        height={100}
+                        className="inline-block"
+                      />
                     </th>
                   </tr>
                 </thead>
@@ -60,6 +75,9 @@ const AboutAndWhy = () => {
                 </tbody>
               </table>
             </div>
+
+            {/* Apply the effect to cover the last three rows between the 1st and 2nd columns */}
+            <div className="absolute top-[calc(100%-3*60px)] left-0 w-[calc(50%+2rem)] h-[180px] bg-yellow-500 opacity-10 blur-[100px] transform -translate-x-1/4" />
           </div>
         </div>
       </div>

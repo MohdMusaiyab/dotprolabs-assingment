@@ -82,7 +82,7 @@ const Features = () => {
                 className={`w-[280px] h-[300px] rounded-lg p-6 shadow-md bg-white/5 backdrop-blur-lg flex flex-col justify-start text-left relative overflow-hidden transition-transform duration-300 hover:-translate-y-2`}
               >
                 {/* Perfect Circular Image Container aligned to the left */}
-                <div className="absolute w-24 h-24 rounded-full border-4 border-white top-4 left-4 flex items-center justify-center bg-white/10">
+                <div className="absolute w-24 h-24 rounded-full  top-4 left-4 flex items-center justify-center bg-white/10">
                   <Image
                     src={feature.image}
                     alt={feature.title}
