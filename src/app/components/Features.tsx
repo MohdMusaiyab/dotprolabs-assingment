@@ -52,7 +52,7 @@ const Features = () => {
   };
 
   return (
-    <section className="text-white px-6 py-16 relative overflow-hidden">
+    <section className="text-white px-6 py-16 relative overflow-hidden mx-10">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.h2
@@ -79,9 +79,9 @@ const Features = () => {
             >
               {/* Square Card with Border and Background */}
               <div
-                className={`w-[280px] h-[300px] rounded-lg p-6 shadow-md bg-white/10 backdrop-blur-lg flex flex-col justify-start text-center relative overflow-hidden transition-transform duration-300 hover:-translate-y-2`}
+                className={`w-[280px] h-[300px] rounded-lg p-6 shadow-md bg-white/5 backdrop-blur-lg flex flex-col justify-start text-left relative overflow-hidden transition-transform duration-300 hover:-translate-y-2`}
               >
-                {/* Perfect Circular Image Container */}
+                {/* Perfect Circular Image Container aligned to the left */}
                 <div className="absolute w-24 h-24 rounded-full border-4 border-white top-4 left-4 flex items-center justify-center bg-white/10">
                   <Image
                     src={feature.image}
@@ -92,12 +92,12 @@ const Features = () => {
                   />
                 </div>
 
-                {/* Card Content */}
-                <div className="flex flex-col items-center justify-center mt-28 px-4">
+                {/* Card Content aligned to the left */}
+                <div className="flex flex-col items-start justify-start mt-28 px-4">
                   <h3 className="text-2xl font-bold mb-4 text-white">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-300 text-sm text-center">
+                  <p className="text-gray-300 text-sm text-left">
                     {feature.description}
                   </p>
                 </div>
